@@ -9,4 +9,23 @@ test('accepts empty input', () => {
 	assert.is(actual, '')
 })
 
+test('scraps invalid input', () => {
+	let actual = minify(';')
+	assert.is(actual, '')
+})
+
+test('removes comments: top-level', () => {
+	let actual = minify(`
+		/**
+		 * Test comment
+		 * New line
+		 */
+		a {
+			color: black;
+		}
+	`)
+	let expected = `a{color:black}`
+	assert.is(actual, expected)
+})
+
 test.run()
