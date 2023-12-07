@@ -1,0 +1,40 @@
+{
+  "name": "@projectwallace/minify-css",
+  "version": "0.0.1",
+  "description": "Fast, small, zero-config library to minify CSS with basic rules.",
+  "type": "module",
+  "source": "index.js",
+  "exports": {
+    "require": "./dist/minify.cjs",
+    "default": "./dist/minify.modern.js"
+  },
+  "types": "./dist/index.d.ts",
+  "main": "./dist/minify.cjs",
+  "module": "./dist/minify.module.js",
+  "unpkg": "./dist/minify.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "test": "uvu"
+  },
+  "devDependencies": {
+    "@types/css-tree": "^2.3.4",
+    "microbundle": "^0.15.1",
+    "uvu": "^0.5.6"
+  },
+  "dependencies": {
+    "css-tree": "^2.3.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "css",
+    "stylesheet",
+    "minifier",
+    "minify",
+    "compact",
+    "compress",
+    "print"
+  ],
+  "license": "MIT"
+}
