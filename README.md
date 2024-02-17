@@ -1,5 +1,8 @@
 # minify-css
 
+> [!WARNING]
+> This repository is not maintained (it was never used actually). Please refer to [format-css](https://github.com/projectwallace/format-css) to minify your CSS. 
+
 Fast, small, zero-config library to minify CSS with basic rules. Simplicity, bundle size and runtime speed are more important than versatility and extensibility.
 
 ## Installation
